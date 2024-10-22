@@ -1,0 +1,190 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+h1, h2, h3, h4, p {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+  width: 300px;
+  height: auto;
+}
+
+.center {
+  max-width: 80rem;
+  margin: 0 auto;
+  border: solid red 2px;
+}
+
+.main-header {
+  height: 100vh;
+  background-image: url(/compressed-landscape-lib.jpeg);
+  background-position:center center;
+  background-repeat: no-repeat;
+  background-size: cover ;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: overlay;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  color: #fff;
+  margin-top: 20rem;
+  z-index: 1000;
+  /* gap: 10rem; */
+}
+
+.nav-wrapper {
+  background:linear-gradient(135deg, #d32f2f, #1565c0, #fff) ;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.75em;
+  border-bottom: 2px solid red;
+  }
+
+  span-branding-1 {
+    color: #fff;
+  }
+  
+  span-branding-2 {
+    color: #1565c0;
+  }
+
+.nav-items {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.nav-items a {
+padding: 0.5rem;
+text-decoration: none;
+text-transform: capitalize;
+color: #fff;
+position: relative;
+cursor: pointer;
+transition: all 0.3s ease;
+}
+
+.nav-items a::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  transition: all 0.4s ease;
+  background-color: #d96969;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.nav-items a:hover {
+  font-weight: bold;
+  color: #555;
+}
+
+.nav-items:hover a::after {
+  background: linear-gradient(to right, red, white);
+  height: 4px;
+}
+
+.header-content {
+  color: #fff;
+  text-transform: capitalize;
+  gap: 0.75rem;
+  font-weight: bold;
+}
+
+.header-content p {
+  font-size: 1.2rem;
+}
+
+.header-content h2 {
+  font-size: 2rem;
+  font-style: italic;
+}
+
+.header-content h2 {
+  background:linear-gradient(135deg, #d32f2f, #1565c0, #fff) ;
+  background-size: 200% 200%;
+  transition: background-position 2s ease;
+}
+
+.header-content h2:hover {
+  background-position: right center;
+}
+
+.btn {
+  outline: none;
+  border: none;
+  text-decoration: none;
+  background:linear-gradient(135deg, #d32f2f, #1565c0, #fff) ;
+  color: #fff;
+  padding: 0.5em 1em;
+  font-size: 1rem;
+  border-radius: 0.3em;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: red;
+  background: transparent;
+  border:3px solid transparent ;
+  background-image: linear-gradient(transparent, transparent), linear-gradient(45deg, #d32f2f, #1565c0);
+}
+
+.btn:active {
+  background: rgb(228, 103, 103);
+  color: #1565c0;
+  }
+
+  .what-we-do {
+    margin-top: 5rem;
+  
+  }
+  .what-we-do-title {
+    text-align: center;
+    text-transform: capitalize;
+  }
+
+  .what-we-do-content {
+    text-align: center;
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .what-we-do-content h3 {
+    text-transform: capitalize;
+  }
+
+  .what-we-do-content p {
+    margin-top: 0.75rem;
+  }
+
+.what-we-do-images li {
+  list-style: none;
+  text-align: center;
+}
+
+.what-we-do-images {
+  outline:2px solid green;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  
+  
+}
